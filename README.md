@@ -25,7 +25,7 @@ To get the complete Windows Basic visual experience, set up the theme files firs
 
 ### Option 1: Automated Helper Tool (Recommended)
 You can use the helper executable included in the repository to simplify installation and keep your mod updated:
-1. Download and run `Installer.exe` from the latest release.
+1. Download and run `GIT-WBCB-INSTALLER.exe` from the latest release.
 2. The tool checks GitHub for the latest version of the C++ mod code and opens Windhawk with the code ready for compilation.
 3. In Windhawk, click **Compile / Accept** to finish installing.
 
