@@ -15,7 +15,7 @@ To get the complete Windows Basic visual experience, set up the theme files firs
 
 1. **Theme Engine Patcher:** Install [SecureUxTheme](https://github.com/namazso/SecureUxTheme) or [UltraUxThemePatcher](https://mhoefs.de/software/uxthemepatcher/en/index.php) to enable custom visual styles.
 2. **Basic Visual Style:** Download and apply the [Aero10 (Vista/Seven) Theme by vaporvance](https://www.deviantart.com/vaporvance/art/Aero10-Vista-Seven-909711949).
-3. **OpenGlass:** Download and Launch the [OpenGlass Latest Version](https://github.com/ALTaleX531/OpenGlass/releases/tag/v3.0.1.3747).
+3. **OpenGlass:** Download and launch the [OpenGlass Latest Version](https://github.com/ALTaleX531/OpenGlass/releases/tag/v3.0.1.3747).
 
 ## ⚠️ Important: Process Inclusion List Required
 `dwm.exe` is on Windhawk's critical system process list. Because of this, **you must add `dwm.exe` to the process inclusion list** in Windhawk's Advanced settings (`Settings -> Advanced settings -> More advanced settings`), otherwise the mod will silently fail to inject and won't work.
