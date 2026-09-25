@@ -1,21 +1,21 @@
 # Windows Basic Caption Buttons
 
-Restores classic, rectangular Windows Basic non-client caption buttons directly within Desktop Window Manager (`dwm.exe`) without relying on external theme engines like Basic Themer.
+Restores classic, rectangular Windows Basic non-client caption buttons directly within Desktop Window Manager (`dwm.exe`) without forcing full legacy frame injectors like Basic Themer.
 
 ## Why Use This Instead of Basic Themer?
 
-Most Windows 7 / Basic themes rely on **Basic Themer**, which introduces well-known stability issues across modern Windows builds:
-* **No Basic Themer crashes:** Avoids UI glitches, app freezes, and desktop crashes caused by hook injection.
-* **Full DWM Compatibility:** Keeps DWM running smoothly without breaking transparency or system animations.
+Most Windows 7 / Basic setups rely on **Basic Themer** to force legacy window frames, which can introduce stability issues across modern Windows builds:
+* **No Basic Themer crashes:** Avoids UI glitches, app freezes, and desktop crashes caused by full frame hook injection.
+* **Full DWM Compatibility:** Keeps DWM running smoothly while specifically modifying non-client caption button coordinates, dimensions, DPI offsets, and point-sampled glyph rendering inside `uDWM.dll`.
 * **Proper Window Scaling:** Caption buttons remain accurately aligned and sized across standard app windows and DWM-required textboxes.
 
 ## Prerequisites for the Full Basic Look
 
-To get the complete Windows Basic visual experience, set up the theme files first:
+To get the complete Windows Basic visual experience and avoid rendering issues, set up the theme files first:
 
 1. **Theme Engine Patcher:** Install [SecureUxTheme](https://github.com/namazso/SecureUxTheme) or [UltraUxThemePatcher](https://mhoefs.de/software/uxthemepatcher/en/index.php) to enable custom visual styles.
 2. **Basic Visual Style:** Download and apply the [Aero10 (Vista/Seven) Theme by vaporvance](https://www.deviantart.com/vaporvance/art/Aero10-Vista-Seven-909711949).
-3. **OpenGlass:** Download and launch the [OpenGlass Latest Version](https://github.com/ALTaleX531/OpenGlass/releases/tag/v3.0.1.3747).
+3. **OpenGlass:** Download and launch [OpenGlass](https://github.com/ALTaleX531/OpenGlass/releases/tag/v3.0.1.3747). *Required to prevent DWM from falling back to default blue title bars and broken window corners on modern Windows builds.*
 
 ## ⚠️ Important: Process Inclusion List Required
 `dwm.exe` is on Windhawk's critical system process list. Because of this, **you must add `dwm.exe` to the process inclusion list** in Windhawk's Advanced settings (`Settings -> Advanced settings -> More advanced settings`), otherwise the mod will silently fail to inject and won't work.
